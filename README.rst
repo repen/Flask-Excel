@@ -261,7 +261,7 @@ Here are some example codes:
 
     @app.route("/export", methods=['GET'])
     def export_records():
-        return excel.make_response_from_array([[1,2], [3, 4]], "csv",
+        return flask_excel.make_response_from_array([[1,2], [3, 4]], "csv",
                                               file_name="export_data")
 
     if __name__ == "__main__":
